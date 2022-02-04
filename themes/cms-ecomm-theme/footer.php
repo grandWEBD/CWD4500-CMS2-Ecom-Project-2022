@@ -13,16 +13,10 @@
 
 	<footer id="colophon" class="site-footer">
 		<div class="site-info">
-			<a href="<?php echo esc_url( __( 'https://wordpress.org/', 'cms-ecomm-theme' ) ); ?>">
-				<?php
-				/* translators: %s: CMS name, i.e. WordPress. */
-				printf( esc_html__( 'Proudly powered by %s', 'cms-ecomm-theme' ), 'WordPress' );
-				?>
-			</a>
 			<span class="sep"> | </span>
 				<?php
-				/* translators: 1: Theme name, 2: Theme author. */
-				printf( esc_html__( 'Theme: %1$s by %2$s.', 'cms-ecomm-theme' ), 'cms-ecomm-theme', '<a href="https://mygrandwebsite.com">Heather Grandovec</a>' );
+				/* translators: 1: Copyright, 2: Site. */
+				printf( esc_html__( 'Copyright %1$s by %2$s.', 'cms-ecomm-theme' ), '2022', '<a href="'. home_url() .'">CMS ECOMM</a>' );
 				?>
 		</div><!-- .site-info -->
 	</footer><!-- #colophon -->
