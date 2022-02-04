@@ -1,0 +1,22 @@
+{
+  "name": "cms-ecomm-theme",
+  "version": "1.0.0",
+  "description": "cms2 cwd4500 ecommerce project theme winter 2022",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/grandWEBD/cwd4500ecommv2.git"
+  },
+  "author": "HG",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/grandWEBD/cwd4500ecommv2/issues"
+  },
+  "homepage": "https://github.com/grandWEBD/cwd4500ecommv2#readme",
+  "devDependencies": {
+    "gulp": "^4.0.2"
+  }
+}
