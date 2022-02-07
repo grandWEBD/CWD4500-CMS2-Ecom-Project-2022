@@ -19,6 +19,10 @@
                     
                 }
             ]
+        },
+        "layout":{
+            "contentSize": "1080px",
+            "wideSize": "1200px"
         }
     }
 }
