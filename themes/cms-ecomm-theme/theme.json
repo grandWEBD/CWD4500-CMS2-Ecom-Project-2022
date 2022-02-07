@@ -3,6 +3,7 @@
     "version": 2,
     "settings": {
         "color": {
+            "custom": false,
             "defaultPalette": false,
             "palette": [
                 {
