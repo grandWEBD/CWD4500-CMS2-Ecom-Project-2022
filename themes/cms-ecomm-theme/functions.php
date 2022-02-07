@@ -87,10 +87,10 @@ function cms_ecomm_theme_setup() {
 			'flex-height' => true,
 		)
 	);
+
+	add_theme_support( 'wp-block-styles' );
 }
 add_action( 'after_setup_theme', 'cms_ecomm_theme_setup' );
-
-add_theme_support( 'wp-block-styles' );
 
 /**
  * Set the content width in pixels, based on the theme's design and stylesheet.
