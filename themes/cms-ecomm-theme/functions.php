@@ -133,7 +133,7 @@ function cms_ecomm_theme_scripts() {
 		'cms-ecomm-theme-style', 
 		get_stylesheet_uri(), 
 		array(), 
-		cms-ecomm-theme_VERSION 
+		'cms-ecomm-theme_VERSION'
 	);
 
 	wp_enqueue_style( 
