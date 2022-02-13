@@ -7,15 +7,117 @@
             "defaultPalette": false,
             "palette": [
                 {
-                    "color": "#000000",
+                    "color": "#223843",
                     "name": "Black",
                     "slug": "black"
                     
                 },
                 {
-                    "color": "#ffffff",
+                    "color": "#F3F3F4",
                     "name": "White",
                     "slug": "white"
+                    
+                },
+                {
+                    "color": "#FB8B24",
+                    "name": "Logo Orange",
+                    "slug": "logo_orange"
+                    
+                },
+                {
+                    "color": "#FDD8B4",
+                    "name": "Logo Orange Medium",
+                    "slug": "logo_orange_medium"
+                    
+                },
+                {
+                    "color": "#FEE6CD",
+                    "name": "Logo Orange Light",
+                    "slug": "logo_orange_light"
+                    
+                },
+                {
+                    "color": "#FEF2E6",
+                    "name": "Logo Orange Very Light",
+                    "slug": "logo_orange_very_light"
+                    
+                },
+                {
+                    "color": "#032B63",
+                    "name": "Logo Blue Dark",
+                    "slug": "logo_blue_dark"
+                    
+                },
+                {
+                    "color": "#A2D1F1",
+                    "name": "Logo Blue Medium",
+                    "slug": "logo_blue_medium"
+                    
+                },
+                {
+                    "color": "#D3E9F8",
+                    "name": "Logo Blue Light",
+                    "slug": "logo_blue_light"
+                    
+                },
+                {
+                    "color": "#E9F4FC",
+                    "name": "Logo Blue Very Light",
+                    "slug": "logo_blue_very_light"
+                    
+                },
+                {
+                    "color": "#3A5D1C",
+                    "name": "Dark Green",
+                    "slug": "dark_green"
+                    
+                },
+                {
+                    "color": "#C8AA4F",
+                    "name": "Gold",
+                    "slug": "gold"
+                    
+                },
+                {
+                    "color": "#9B7420",
+                    "name": "Dark Gold",
+                    "slug": "dark_gold"
+                    
+                },
+                {
+                    "color": "#9EA93F",
+                    "name": "Medium Green",
+                    "slug": "medium_green"
+                    
+                },
+                {
+                    "color": "#0A1045",
+                    "name": "Royal Blue Dark",
+                    "slug": "royal_blue_dark"
+                    
+                },
+                {
+                    "color": "#035E7B",
+                    "name": "Dark Steel Blue",
+                    "slug": "dark_steel_blue"
+                    
+                },
+                {
+                    "color": "#0091AD",
+                    "name": "Medium Blue",
+                    "slug": "medium_blue"
+                    
+                },
+                {
+                    "color": "#CEE5F2",
+                    "name": "Light Blue",
+                    "slug": "light_blue"
+                    
+                },
+                {
+                    "color": "#F8F2DC",
+                    "name": "Eggshell",
+                    "slug": "eggshell"
                     
                 }
             ]
