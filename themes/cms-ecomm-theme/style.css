@@ -19,3 +19,27 @@ CMS2 eCOMM Theme is based on Underscores https://underscores.me/, (C) 2012-2020 
 Underscores is distributed under the terms of the GNU GPL v2 or later.
 
 */
+
+@font-face { 
+    font-family: 'Signika',sans-serif; 
+    src: url(./assets/fonts/Signika/Signika-Regular.ttf); 
+    font-weight: normal; 
+    }
+
+@font-face { 
+    font-family: 'Signika',sans-serif; 
+    src: url(./assets/fonts/Signika/Signika-Bold.ttf); 
+    font-weight: bold; 
+    }
+
+@font-face { 
+    font-family: 'Signika',sans-serif; 
+    src: url(./assets/fonts/Signika/Signika-SemiBold.ttf); 
+    font-weight: 600;
+    }
+
+@font-face { 
+    font-family: 'Salsa',cursive; 
+    src: url(./assets/fonts/Salsa/Salsa-Regular.ttf); 
+    font-weight: normal;
+    }
