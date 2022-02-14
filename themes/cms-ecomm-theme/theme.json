@@ -200,14 +200,22 @@
                 },
                 "color": {
                     "background": false,
-                    "palette": [
-                        "var(--wp--preset--color--royal-blue-dark)",
-                        "var(--wp--preset--color--black)"
-                    ]
+                        "palette": [
+                            {
+                                "color": "#0A1045",
+                                "name": "Royal Blue Dark",
+                                "slug": "royal-blue-dark"
+                                
+                            },
+                            {
+                                "color": "#223843",
+                                "name": "Black",
+                                "slug": "black"
+                                
+                            }
+                        ]
                 }
-
-			},
-            "border": false
+			}
 		}
     }  
 }
