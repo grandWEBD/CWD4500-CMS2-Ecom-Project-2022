@@ -120,11 +120,58 @@
                     "slug": "eggshell"
                     
                 }
-            ]
+            ],
+            "gradients": false,
+            "customGradient": false,
+            "duotone": false
         },
         "layout":{
             "contentSize": "1080px",
             "wideSize": "1200px"
+        },
+        "typography": {
+            "fontFamilies": [
+                {
+                    "fontFamily": "\"Signika\",sans-serif",
+                    "slug": "base-font",
+                    "name": "Base Font"
+                },
+                {
+                    "fontFamily": "\"Salsa\",cursive",
+                    "slug": "title-font",
+                    "name": "Title Font"
+                }
+            ],
+            "fontSizes": [
+                {
+                    "slug": "normal",
+                    "size": 16,
+                    "name": "Normal"
+                },
+                {
+                    "slug": "title",
+                    "size": 32,
+                    "name": "Title"
+                }
+            ]
+        },
+        "blocks": {
+            "core/group": {
+                "color": {
+                    "palette": [
+                        {
+                            "slug": "black",
+                            "color": "#000000",
+                            "name": "Black"
+                        },
+                        {
+                            "slug": "white",
+                            "color": "#ffffff",
+                            "name": "White"
+                        }
+                    ]
+                }
+            }
         }
     }
 }
