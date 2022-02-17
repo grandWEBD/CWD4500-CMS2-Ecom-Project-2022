@@ -88,6 +88,8 @@ function cms_ecomm_theme_setup() {
 		)
 	); */
 
+	remove_theme_support('core-block-patterns');
+
 	// apply styles to embedded content to reflect the aspect ratio of content that is embedded in an iFrame
 	add_theme_support( 'responsive-embeds' );
 
