@@ -2,7 +2,7 @@
 # This file is distributed under the same license as the WordPress - 5.9.x - Development - Administration package.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2021-12-23 16:15:07+0000\n"
+"PO-Revision-Date: 2022-02-11 01:23:43+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -30,6 +30,225 @@ msgstr "America/Toronto"
 #: wp-admin/upgrade.php:154
 msgid "Continue"
 msgstr "Continue"
+
+#. translators: %s: Learn WordPress link.
+#: wp-admin/about.php:273
+msgid "Want to dive into 5.9 but don&#8217;t know where to start? Visit <a href=\"%s\">learn.wordpress.org</a> for expanding resources on new features in WordPress 5.9."
+msgstr "Want to dive into 5.9 but don&#8217;t know where to start? Visit <a href=\"%s\">learn.wordpress.org</a> for expanding resources on new features in WordPress 5.9."
+
+#: wp-admin/includes/dashboard.php:2044
+msgid "Learn about block themes"
+msgstr "Learn about block themes"
+
+#: wp-admin/includes/dashboard.php:2043
+msgid "There&#8217;s a new kind of WordPress theme, called a block theme, that lets you build the site you&#8217;ve always wanted &#8212; with blocks and styles."
+msgstr "There&#8217;s a new kind of WordPress theme, called a block theme, that lets you build the site you&#8217;ve always wanted &#8212; with blocks and styles."
+
+#: wp-admin/includes/dashboard.php:2042
+msgid "Discover a new way to build your site."
+msgstr "Discover a new way to build your site."
+
+#: wp-admin/includes/dashboard.php:2040
+msgid "Edit styles"
+msgstr "Edit styles"
+
+#: wp-admin/includes/dashboard.php:2039
+msgid "Tweak your site, or give it a whole new look! Get creative &#8212; how about a new color palette or font?"
+msgstr "Tweak your site, or give it a whole new look! Get creative &#8212; how about a new colour palette or font?"
+
+#: wp-admin/includes/dashboard.php:2038
+msgid "Switch up your site&#8217;s look & feel with Styles"
+msgstr "Switch up your site&#8217;s look & feel with Styles"
+
+#: wp-admin/includes/dashboard.php:2029
+msgid "Open the Customizer"
+msgstr "Open the Customizer"
+
+#: wp-admin/includes/dashboard.php:2027
+msgid "Configure your site&#8217;s logo, header, menus, and more in the Customizer."
+msgstr "Configure your site&#8217;s logo, header, menus, and more in the Customizer."
+
+#: wp-admin/includes/dashboard.php:2026
+msgid "Start Customizing"
+msgstr "Start Customizing"
+
+#: wp-admin/includes/dashboard.php:2024
+msgid "Open site editor"
+msgstr "Open site editor"
+
+#: wp-admin/includes/dashboard.php:2023
+msgid "Design everything on your site &#8212; from the header down to the footer, all using blocks and patterns."
+msgstr "Design everything on your site &#8212; from the header down to the footer, all using blocks and patterns."
+
+#: wp-admin/includes/dashboard.php:2022
+msgid "Customize your entire site with block themes"
+msgstr "Customize your entire site with block themes"
+
+#: wp-admin/includes/dashboard.php:2015
+msgid "Add a new page"
+msgstr "Add a new page"
+
+#: wp-admin/includes/dashboard.php:2014
+msgid "Block patterns are pre-configured block layouts. Use them to get inspired or create new pages in a flash."
+msgstr "Block patterns are pre-configured block layouts. Use them to get inspired or create new pages in a flash."
+
+#: wp-admin/includes/dashboard.php:2013
+msgid "Author rich content with blocks and patterns"
+msgstr "Author rich content with blocks and patterns"
+
+#. translators: %s: Current WordPress version.
+#: wp-admin/includes/dashboard.php:2004
+msgid "Learn more about the %s version."
+msgstr "Learn more about the %s version."
+
+#: wp-admin/freedoms.php:35
+msgid "WordPress is free and open source software"
+msgstr "WordPress is free and open source software"
+
+#: wp-admin/about.php:268
+msgid "Learn more about the new features in 5.9"
+msgstr "Learn more about the new features in 5.9"
+
+#. translators: %s: Gallery Refactor dev note link.
+#: wp-admin/about.php:253
+msgid "The changes to the Gallery block listed above are the result of a near-complete refactoring. Have you built a plugin or theme on the Gallery block functionality? Be sure to read the <a href=\"%s\">Gallery block compatibility dev note</a>."
+msgstr "The changes to the Gallery block listed above are the result of a near-complete refactoring. Have you built a plugin or theme on the Gallery block functionality? Be sure to read the <a href=\"%s\">Gallery block compatibility dev note</a>."
+
+#: wp-admin/about.php:247
+msgid "A refactored Gallery block"
+msgstr "A refactored Gallery block"
+
+#: wp-admin/about.php:242
+msgid "Now you can lock any block (or a few of them) in a pattern, just by adding a lock attribute to its settings in block.json &#8212; leaving the rest of the pattern free for site editors to adapt to their content."
+msgstr "Now you can lock any block (or a few of them) in a pattern, just by adding a lock attribute to its settings in block.json &#8212; leaving the rest of the pattern free for site editors to adapt to their content."
+
+#: wp-admin/about.php:239
+msgid "Block&#8209;level locking"
+msgstr "Block&#8209;level locking"
+
+#. translators: %s: Multiple stylesheets dev note link.
+#: wp-admin/about.php:229
+msgid "Now you can register more than one stylesheet per block. You can use this to share styles across blocks you write, or to load styles for individual blocks, so your styles are only loaded when the block is used. Find out more about <a href=\"%s\">using multiple stylesheets in a block</a>."
+msgstr "Now you can register more than one style sheet per block. You can use this to share styles across blocks you write, or to load styles for individual blocks, so your styles are only loaded when the block is used. Find out more about <a href=\"%s\">using multiple style sheets in a block</a>."
+
+#: wp-admin/about.php:223
+msgid "Multiple stylesheets for a block"
+msgstr "Multiple style sheets for a block"
+
+#. translators: %s: Block-based themes dev note link.
+#: wp-admin/about.php:215
+msgid "A new way to build themes: Block themes use blocks to define the templates that structure your entire site. The new templates and template parts are defined in HTML and use the custom styling offered in theme.json. More information is available in the <a href=\"%s\">block themes dev note</a>."
+msgstr "A new way to build themes: Block themes use blocks to define the templates that structure your entire site. The new templates and template parts are defined in HTML and use the custom styling offered in theme.json. More information is available in the <a href=\"%s\">block themes dev note</a>."
+
+#: wp-admin/about.php:209
+msgid "Introducing block themes"
+msgstr "Introducing block themes"
+
+#. translators: %s: Version number.
+#: wp-admin/about.php:199
+msgid "WordPress %s for developers"
+msgstr "WordPress %s for developers"
+
+#: wp-admin/about.php:184
+msgid "Style every image in your gallery differently from the next (with different crops, or duotones, for instance) or make them all the same. And change the layout with drag-and-drop."
+msgstr "Style every image in your gallery differently from the next (with different crops, or duotones, for instance) or make them all the same. And change the layout with drag-and-drop."
+
+#: wp-admin/about.php:181
+msgid "Treat every image in a Gallery block the same way you would treat it in the Image block."
+msgstr "Treat every image in a Gallery block the same way you would treat it in the Image block."
+
+#: wp-admin/about.php:178
+msgid "A better Gallery block"
+msgstr "A better Gallery block"
+
+#: wp-admin/about.php:170
+msgid "In 5.9, the List View lets you drag and drop your content exactly where you want it. Managing complex documents is easier, too: simple controls let you expand and collapse sections as you build your site &#8212; and add HTML anchors to your blocks to help users get around the page."
+msgstr "In 5.9, the List View lets you drag and drop your content exactly where you want it. Managing complex documents is easier, too: simple controls let you expand and collapse sections as you build your site &#8212; and add HTML anchors to your blocks to help users get around the page."
+
+#: wp-admin/about.php:167
+msgid "A revamped List View"
+msgstr "A revamped List View"
+
+#: wp-admin/about.php:153
+msgid "With a near full-screen view that draws you in to see fine details, the Pattern Explorer makes it easy to compare patterns and choose the one your users will expect."
+msgstr "With a near full-screen view that draws you in to see fine details, the Pattern Explorer makes it easy to compare patterns and choose the one your users will expect."
+
+#: wp-admin/about.php:150
+msgid "The WordPress Pattern Directory is the home of a wide range of block patterns built to save you time and add core site functionality. And you can edit them as you see fit. Need something different in the header or footer for your theme? Swap it out with a new one in a few clicks."
+msgstr "The WordPress Pattern Directory is the home of a wide range of block patterns built to save you time and add core site functionality. And you can edit them as you see fit. Need something different in the header or footer for your theme? Swap it out with a new one in a few clicks."
+
+#: wp-admin/about.php:147
+msgid "The power of patterns"
+msgstr "The power of patterns"
+
+#: wp-admin/about.php:139
+msgid "WordPress 5.9 features new typography tools, flexible layout controls, and finer control over details like spacing, borders, and more &#8212; to help you get not just the look, but the polish that says you care about details."
+msgstr "WordPress 5.9 features new typography tools, flexible layout controls, and finer control over details like spacing, borders, and more &#8212; to help you get not just the look, but the polish that says you care about details."
+
+#: wp-admin/about.php:136
+msgid "Better block controls"
+msgstr "Better block controls"
+
+#: wp-admin/about.php:124
+msgid "Do you love to blog or produce content? New tweaks to the publishing flow help you say more, faster."
+msgstr "Do you love to blog or produce content? New tweaks to the publishing flow help you say more, faster."
+
+#: wp-admin/about.php:121
+msgid "More improvements and updates"
+msgstr "More improvements and updates"
+
+#: wp-admin/about.php:112
+msgid "The new Navigation block gives you the power to choose: an always-on responsive menu or one that adapts to your user&#8217;s screen size. Whatever you create, know it&#8217;s there to reuse wherever you like, whether in a brand new template or after switching themes."
+msgstr "The new Navigation block gives you the power to choose: an always-on responsive menu or one that adapts to your user&#8217;s screen size. Whatever you create, know it&#8217;s there to reuse wherever you like, whether in a brand-new template or after switching themes."
+
+#: wp-admin/about.php:109
+msgid "Blocks come to site navigation, the heart of user experience."
+msgstr "Blocks come to site navigation, the heart of user experience."
+
+#: wp-admin/about.php:106
+msgid "The Navigation block"
+msgstr "The Navigation block"
+
+#: wp-admin/about.php:92
+msgid "When you use any of those new themes, you no longer need the Customizer. Instead, you have all the power of the Styles interface inside the Site Editor. Just as in Twenty Twenty&#8209;Two, you build your site&#8217;s look and feel there, with the tools you need for the job in a fluid interface that practically comes alive in your hands."
+msgstr "When you use any of those new themes, you no longer need the Customizer. Instead, you have all the power of the Styles interface inside the Site Editor. Just as in Twenty Twenty&#8209;Two, you build your site&#8217;s look and feel there, with the tools you need for the job in a fluid interface that practically comes alive in your hands."
+
+#: wp-admin/about.php:89
+msgid "More block themes built for full site editing features are in the Theme Directory alongside the Twenty Twenty&#8209;Two theme, just waiting to be explored. Expect more to come!"
+msgstr "More block themes built for full site editing features are in the Theme Directory alongside the Twenty Twenty&#8209;Two theme, just waiting to be explored. Expect more to come!"
+
+#: wp-admin/about.php:86
+msgid "Your personal paintbox awaits"
+msgstr "Your personal paintbox awaits"
+
+#. translators: %s: Link to Themes screen.
+#: wp-admin/about.php:74
+msgid "The Twenty Twenty&#8209;Two theme is already available to you. It came installed with WordPress 5.9, and you will find it with <a href=\"%s\">your other installed themes</a>."
+msgstr "The Twenty Twenty&#8209;Two theme is already available to you. It came installed with WordPress 5.9, and you will find it with <a href=\"%s\">your other installed themes</a>."
+
+#: wp-admin/about.php:67
+msgid "Block themes put a wide array of visual choices in your hands, from color schemes and typeface combinations to page templates and image filters &#8212; all together, in the site editing interface. By making changes in one place, you can give Twenty Twenty&#8209;Two the same look and feel as your brand or other websites &#8212; or take your site&#8217;s look in another direction."
+msgstr "Block themes put a wide array of visual choices in your hands, from colour schemes and typeface combinations to page templates and image filters &#8212; all together, in the site editing interface. By making changes in one place, you can give Twenty Twenty&#8209;Two the same look and feel as your brand or other websites &#8212; or take your site&#8217;s look in another direction."
+
+#: wp-admin/about.php:64
+msgid "And say hello to the first default block theme in the history of WordPress. This is more than just a new default theme. It&#8217;s a brand-new way to work with WordPress themes."
+msgstr "And say hello to the first default block theme in the history of WordPress. This is more than just a new default theme. It&#8217;s a brand-new way to work with WordPress themes."
+
+#: wp-admin/about.php:61
+msgid "Say hello to Twenty Twenty&#8209;Two"
+msgstr "Say hello to Twenty Twenty&#8209;Two"
+
+#: wp-admin/about.php:49
+msgid "It puts you in control of your whole site, right in the WordPress Admin."
+msgstr "It puts you in control of your whole site, right in the WordPress Admin."
+
+#: wp-admin/about.php:46
+msgid "Full Site Editing is here"
+msgstr "Full Site Editing is here"
+
+#: wp-admin/about.php:31
+msgid "Build the site you&#8217;ve always wanted &#8212; with blocks"
+msgstr "Build the site you&#8217;ve always wanted &#8212; with blocks"
 
 #: wp-admin/menu.php:282 wp-admin/menu.php:283 wp-admin/menu.php:313
 #: wp-admin/network/menu.php:107
@@ -211,6 +430,11 @@ msgstr "We take privacy and transparency very seriously"
 #: wp-admin/freedoms.php:30
 msgid "The Four Freedoms"
 msgstr "The Four Freedoms"
+
+#. translators: %s: Version number.
+#: wp-admin/credits.php:35
+msgid "WordPress %s was created by a worldwide team of passionate individuals"
+msgstr "WordPress %s was created by a worldwide team of passionate individuals"
 
 #. translators: %s: Theme name.
 #: wp-admin/themes.php:1154
@@ -711,6 +935,11 @@ msgstr "Your website appears to use Basic Authentication, which is not currently
 #: wp-admin/includes/class-wp-site-health.php:2244
 msgid "https://developer.wordpress.org/rest-api/frequently-asked-questions/#why-is-authentication-not-working"
 msgstr "https://developer.wordpress.org/rest-api/frequently-asked-questions/#why-is-authentication-not-working"
+
+#. translators: %s: WordPress 5.9 Field Guide link.
+#: wp-admin/about.php:290
+msgid "Check out the latest version of the WordPress Field Guide. It highlights developer notes for each change you may want to be aware of. <a href=\"%s\">WordPress 5.9 Field Guide.</a>"
+msgstr "Check out the latest version of the WordPress Field Guide. It highlights developer notes for each change you may want to be aware of. <a href=\"%s\">WordPress 5.9 Field Guide.</a>"
 
 #: wp-admin/update-core.php:392
 msgid "This site appears to be under version control. Automatic updates are disabled."
@@ -2409,6 +2638,10 @@ msgstr "https://wordpress.org/support/article/custom-fields/"
 #: wp-admin/includes/meta-boxes.php:747
 msgid "https://wordpress.org/support/article/introduction-to-blogging/#comments"
 msgstr "https://wordpress.org/support/article/introduction-to-blogging/#comments"
+
+#: wp-admin/includes/dashboard.php:2044
+msgid "https://wordpress.org/support/article/block-themes/"
+msgstr "https://wordpress.org/support/article/block-themes/"
 
 #. translators: Post date information. %s: Date on which the post is to be
 #. published.

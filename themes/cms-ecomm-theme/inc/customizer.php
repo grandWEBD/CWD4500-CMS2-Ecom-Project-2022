@@ -55,6 +55,6 @@ function cms_ecomm_theme_customize_partial_blogdescription() {
  * Binds JS handlers to make Theme Customizer preview reload changes asynchronously.
  */
 function cms_ecomm_theme_customize_preview_js() {
-	wp_enqueue_script( 'cms-ecomm-theme-customizer', get_template_directory_uri() . '/assets/js/customizer.js', array( 'customize-preview' ), cms-ecomm-theme_VERSION, true );
+	wp_enqueue_script( 'cms_ecomm_theme_customizer', get_template_directory_uri() . '/assets/js/customizer.js', array( 'customize-preview' ), 'cms_ecomm_theme_VERSION', true );
 }
 add_action( 'customize_preview_init', 'cms_ecomm_theme_customize_preview_js' );

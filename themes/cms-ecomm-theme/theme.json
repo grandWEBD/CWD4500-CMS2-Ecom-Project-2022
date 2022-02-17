@@ -1,5 +1,6 @@
 {
-    "version": 1,
+    "$schema": "https://schemas.wp.org/trunk/theme.json",
+    "version": 2,
     "settings": {
         "color": {
             "custom": false,
@@ -132,15 +133,21 @@
         "typography": {
             "fontFamilies": [
                 {
+                    "fontFamily": "Helvetica Neue, Helvetica, Arial, sans-serif",
+                    "slug": "helvetica-arial",
+                    "name": "Helvetica or Arial"
+                },
+                {
                     "fontFamily": "\"Signika\",sans-serif",
-                    "slug": "base-font",
-                    "name": "Base Font"
+                    "slug": "signika-sansserif",
+                    "name": "Signika"
                 },
                 {
                     "fontFamily": "\"Salsa\",cursive",
-                    "slug": "title-font",
-                    "name": "Title Font"
+                    "slug": "salsa-cursive",
+                    "name": "Salsa"
                 }
+
             ],
             "fontSizes": [
                 {
@@ -168,6 +175,8 @@
             "dropCap": false
         },
         "border": {
+            "style": false,
+			"width": false,
             "radius": false,
             "customRadius": false
         }
@@ -183,35 +192,17 @@
         "blocks": {
             "core/paragraph": {
                 "typography": {
-                    "fontFamilies": "var(--wp--preset--fontFamilies--base-font)",
-                    "fontSizes": [
-                        {
-                            "slug": "small",
-                            "size": 14,
-                            "name": "Small"
-                        },
-                        {
-                            "slug": "normal",
-                            "size": 16,
-                            "name": "Normal"
-                        }
+                    "fontFamilies": "var(--wp--preset--fontFamilies--signika-sansserif)",
+                    "fontSizes": [ 
+                        "var(--wp--preset--color--small)", 
+                        "var(--wp--preset--color--normal)"
                     ]
                 },
                 "color": {
                     "background": false,
-                        "palette": [
-                            {
-                                "color": "#0A1045",
-                                "name": "Royal Blue Dark",
-                                "slug": "royal-blue-dark"
-                                
-                            },
-                            {
-                                "color": "#223843",
-                                "name": "Black",
-                                "slug": "black"
-                                
-                            }
+                        "palette": [ 
+                            "var(--wp--preset--color--black)", 
+                            "var(--wp--preset--color--royal-blue-dark)"
                         ]
                 }
 			}

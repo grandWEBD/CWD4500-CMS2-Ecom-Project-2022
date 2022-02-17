@@ -78,7 +78,7 @@ function cms_ecomm_theme_setup() {
 	 *
 	 * @link https://codex.wordpress.org/Theme_Logo
 	 */
-	add_theme_support(
+	/* add_theme_support(
 		'custom-logo',
 		array(
 			'height'      => 250,
@@ -86,7 +86,10 @@ function cms_ecomm_theme_setup() {
 			'flex-width'  => true,
 			'flex-height' => true,
 		)
-	);
+	); */
+
+	// apply styles to embedded content to reflect the aspect ratio of content that is embedded in an iFrame
+	add_theme_support( 'responsive-embeds' );
 
 	add_theme_support( 'wp-block-styles' );
 }
