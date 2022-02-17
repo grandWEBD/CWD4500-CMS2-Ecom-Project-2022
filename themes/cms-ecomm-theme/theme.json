@@ -1,8 +1,12 @@
 {
-    "version": 2,
+    "version": 1,
     "settings": {
         "color": {
             "custom": false,
+            "gradients": false,
+            "customGradient": false,
+            "duotone": false,
+            "link": false,
             "defaultPalette": false,
             "palette": [
                 {
@@ -119,11 +123,7 @@
                     "slug": "eggshell"
                     
                 }
-            ],
-            "gradients": false,
-            "customGradient": false,
-            "duotone": false,
-            "link": false
+            ]
         },
         "layout":{
             "contentSize": "1080px",
@@ -170,13 +170,13 @@
         "border": {
             "radius": false,
             "customRadius": false
-        },
-        "styles": {
-            "elements": {
-                "link": {
-                    "color": {
-                        "text": "var(--wp--preset--color--medium-blue)"
-                    }
+        }
+    },
+    "styles": {
+        "elements": {
+            "link": {
+                "color": {
+                    "text": "var(--wp--preset--color--medium-blue)"
                 }
             }
         },
@@ -216,5 +216,7 @@
                 }
 			}
 		}
-    }  
+    },
+    "customTemplates": {},
+    "templateParts": {}
 }
