@@ -193,7 +193,7 @@ require get_template_directory() . '/inc/block-editor.php';
 
 
 /**
- * Add class to hide entry header titles on pages
+ * Add class to hide entry header and entry footer titles on pages
  */
 function cms_ecomm_theme_hidetitle_class($classes) {
 	if ( is_page() ) : 

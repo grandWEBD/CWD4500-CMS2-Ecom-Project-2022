@@ -44,7 +44,7 @@ Underscores is distributed under the terms of the GNU GPL v2 or later.
     font-weight: normal;
     }
 
-header{
+.site-header{
     background-color: #E9F4FC;
     display: grid;
     grid-template-columns: 15% 35% 50%;
@@ -113,12 +113,25 @@ header{
     font-weight: bold;
 }
 
-.hidetitle .entry-title { 
+.hidetitle .entry-header { 
     display: none;
 }
 
-footer{
+.hidetitle .entry-footer{
+    display: none;
+}
+
+.site-footer{
+    padding: 1rem;
     background-color: #3A5D1C;
+    color: #FEF2E6;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+
+.site-footer a{
+    color: #A2D1F1;
 }
 
 @media only screen and (max-width: 680px) {
