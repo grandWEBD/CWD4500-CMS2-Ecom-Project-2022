@@ -136,11 +136,6 @@
         "typography": {
             "fontFamilies": [
                 {
-                    "fontFamily": "Helvetica Neue, Helvetica, Arial, sans-serif",
-                    "slug": "helvetica-arial",
-                    "name": "Helvetica or Arial"
-                },
-                {
                     "fontFamily": "\"Signika\",sans-serif",
                     "slug": "signika-sansserif",
                     "name": "Signika"
@@ -167,13 +162,7 @@
                     "slug": "large",
                     "size": "24px",
                     "name": "Large"
-                },
-                {
-                    "slug": "extra-large",
-                    "size": "28px",
-                    "name": "extra-large"
                 }
-
             ],
             "customFontSize": false,
             "fontStyle": false,
@@ -193,17 +182,6 @@
         }
     },
     "styles": {
-        "border": {
-                "color": "",
-                "radius": "",
-                "style": "",
-                "width": ""
-            },
-        "color": {
-            "background": "",
-            "gradient": "",
-            "text": ""
-        },
         "spacing": {
             "blockGap": "1rem",
             "margin": {
@@ -213,31 +191,26 @@
                 "left": "1rem"
             },
             "padding": {
-                "top": "",
+                "top": ".5rem",
                 "right": "",
-                "bottom": "",
+                "bottom": ".5rem",
                 "left": ""
             }
         },
-        "typography": {
-                "fontFamily": "",
-                "fontSize": "",
-                "fontStyle": "",
-                "fontWeight": "",
-                "letterSpacing": "",
-                "lineHeight": ""
-        },
         "elements": {
             "link": {
-                "border": {},
-                "color": {},
-                "spacing": {},
-                "typography": {}
+                "color": {
+                    "text": "var(--wp--preset--color--dark-steel-blue)"
+                },
+                "typography": {
+                    "fontFamily": "var(--wp--preset--font-family--salsa-sansserif)",
+                    "textDecoration": "underline"
+                }
             },
             "h1": {
                 "typography": {
                     "fontFamily": "var(--wp--preset--font-family--salsa-sansserif)",
-                    "fontSize": "var(--wp--preset--font-size--extra-large)"
+                    "fontSize": "28px"
                 }
             },
             "h2": {
@@ -285,12 +258,17 @@
             "core/heading": {
                 "typography": {
                     "fontFamily": "var(--wp--preset--font-family--salsa-sansserif)",
-                    "fontSize": "var(--wp--preset--font-size--large)"
+                    "fontWeight": "bold"
+                }
+			},
+            "core/quote": {
+                "border": {
+                    "color": "var(--wp--preset--color--logo-orange)"
                 },
                 "color": {
-                    "text": "var(--wp--preset--color--royal-blue-dark)"
+                    "text": "var(--wp--preset--color--logo-blue)"
                 }
-			}
+            }
 		}
     },
     "customTemplates": [],
