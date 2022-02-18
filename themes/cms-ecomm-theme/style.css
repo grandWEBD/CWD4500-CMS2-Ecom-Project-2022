@@ -49,7 +49,16 @@ header{
     display: grid;
     grid-template-columns: 15% 35% 50%;
     grid-template-rows: 1fr;
+    justify-content: center;
     align-items: center;
+}
+
+.site-header > a > img{
+    max-height: 4rem;
+}
+
+.site-branding{
+    grid-column: 2/3;
 }
 
 .main-navigation{
@@ -60,20 +69,20 @@ header{
     display: none;
 }
 
-#primary-menu{
+#header-menu{
     list-style-type: none;
     margin: 0;
     padding: 0;
     overflow: hidden;
 }
 
-#primary-menu > li{
+#header-menu > li{
     float: right;
     font-family: 'Salsa',cursive;
     font-size: 21px;
 }
 
-#primary-menu > li > a {
+#header-menu > li > a {
     display: block;
     color: #032B63;
     text-align: center;
@@ -81,7 +90,7 @@ header{
     text-decoration: none;
 }
 
-#primary-menu > li > a:hover {
+#header-menu > li > a:hover {
     background-color: #FB8B24;
 }
 
