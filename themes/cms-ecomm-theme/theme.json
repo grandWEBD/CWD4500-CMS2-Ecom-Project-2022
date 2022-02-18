@@ -4,23 +4,9 @@
     "settings": {
         "color": {
             "custom": false,
-            "gradients": [
-                {
-                    "gradient": "",
-                    "name": "",
-                    "slug": ""
-                    
-                }
-            ],
+            "gradients": [],
             "customGradient": false,
-            "duotone": [
-                {
-                    "colors": ["",""],
-                    "name": "",
-                    "slug": ""
-                    
-                }
-            ],
+            "duotone": [],
             "link": false,
             "defaultPalette": false,
             "palette": [
