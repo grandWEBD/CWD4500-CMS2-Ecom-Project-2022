@@ -190,3 +190,16 @@ require get_template_directory() . '/inc/customizer.php';
  * Block Editor additions.
  */
 require get_template_directory() . '/inc/block-editor.php';
+
+
+/**
+ * Add class to hide entry header titles on pages
+ */
+function cms_ecomm_theme_hidetitle_class($classes) {
+	if ( is_page() ) : 
+		$classes[] = 'hidetitle';
+		return $classes;
+	endif; 
+	return $classes;
+}
+add_filter('post_class', 'cms_ecomm_theme_hidetitle_class');

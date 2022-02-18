@@ -68,6 +68,17 @@ header{
     flex-direction: row;
 }
 
+.site-title{
+    font-family: 'Salsa',cursive;;
+    font-weight: bold;
+    font-size: 28px;
+}
+
+.site-title a{
+    background-color: #E9F4FC;
+    text-decoration: none;
+}
+
 .main-navigation{
     grid-column: 3/4;
 }
@@ -98,7 +109,12 @@ header{
 }
 
 #header-menu > li > a:hover {
-    background-color: #FB8B24;
+    color: #FB8B24;
+    font-weight: bold;
+}
+
+.hidetitle .entry-title { 
+    display: none;
 }
 
 footer{
