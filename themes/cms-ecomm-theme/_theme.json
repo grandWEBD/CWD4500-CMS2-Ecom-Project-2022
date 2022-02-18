@@ -1,0 +1,213 @@
+{
+    "$schema": "https://schemas.wp.org/trunk/theme.json",
+    "version": 2,
+    "settings": {
+        "color": {
+            "custom": false,
+            "gradients": false,
+            "customGradient": false,
+            "duotone": false,
+            "link": false,
+            "defaultPalette": false,
+            "palette": [
+                {
+                    "color": "#223843",
+                    "name": "Black",
+                    "slug": "black"
+                    
+                },
+                {
+                    "color": "#F3F3F4",
+                    "name": "White",
+                    "slug": "white"
+                    
+                },
+                {
+                    "color": "#FB8B24",
+                    "name": "Logo Orange",
+                    "slug": "logo-orange"
+                    
+                },
+                {
+                    "color": "#FDD8B4",
+                    "name": "Logo Orange Medium",
+                    "slug": "logo-orange-medium"
+                    
+                },
+                {
+                    "color": "#FEE6CD",
+                    "name": "Logo Orange Light",
+                    "slug": "logo-orange-light"
+                    
+                },
+                {
+                    "color": "#FEF2E6",
+                    "name": "Logo Orange Very Light",
+                    "slug": "logo-orange-very-light"
+                    
+                },
+                {
+                    "color": "#032B63",
+                    "name": "Logo Blue",
+                    "slug": "logo-blue"
+                    
+                },
+                {
+                    "color": "#A2D1F1",
+                    "name": "Logo Blue Medium",
+                    "slug": "logo-blue-medium"
+                    
+                },
+                {
+                    "color": "#D3E9F8",
+                    "name": "Logo Blue Light",
+                    "slug": "logo-blue-light"
+                    
+                },
+                {
+                    "color": "#E9F4FC",
+                    "name": "Logo Blue Very Light",
+                    "slug": "logo-blue-very-light"
+                    
+                },
+                {
+                    "color": "#3A5D1C",
+                    "name": "Dark Green",
+                    "slug": "dark-green"
+                    
+                },
+                {
+                    "color": "#C8AA4F",
+                    "name": "Gold",
+                    "slug": "gold"
+                    
+                },
+                {
+                    "color": "#9B7420",
+                    "name": "Dark Gold",
+                    "slug": "dark-gold"
+                    
+                },
+                {
+                    "color": "#9EA93F",
+                    "name": "Medium Green",
+                    "slug": "medium-green"
+                    
+                },
+                {
+                    "color": "#0A1045",
+                    "name": "Royal Blue Dark",
+                    "slug": "royal-blue-dark"
+                    
+                },
+                {
+                    "color": "#035E7B",
+                    "name": "Dark Steel Blue",
+                    "slug": "dark-steel-blue"
+                    
+                },
+                {
+                    "color": "#0091AD",
+                    "name": "Medium Blue",
+                    "slug": "medium-blue"
+                    
+                },
+                {
+                    "color": "#CEE5F2",
+                    "name": "Light Blue",
+                    "slug": "light-blue"
+                    
+                },
+                {
+                    "color": "#F8F2DC",
+                    "name": "Eggshell",
+                    "slug": "eggshell"
+                    
+                }
+            ]
+        },
+        "layout":{
+            "contentSize": "1080px",
+            "wideSize": "1200px"
+        },
+        "typography": {
+            "fontFamilies": [
+                {
+                    "fontFamily": "Helvetica Neue, Helvetica, Arial, sans-serif",
+                    "slug": "helvetica-arial",
+                    "name": "Helvetica or Arial"
+                },
+                {
+                    "fontFamily": "\"Signika\",sans-serif",
+                    "slug": "signika-sansserif",
+                    "name": "Signika"
+                },
+                {
+                    "fontFamily": "\"Salsa\",cursive",
+                    "slug": "salsa-cursive",
+                    "name": "Salsa"
+                }
+
+            ],
+            "fontSizes": [
+                {
+                    "slug": "small",
+                    "size": 12,
+                    "name": "Small"
+                },
+                {
+                    "slug": "normal",
+                    "size": 16,
+                    "name": "Normal"
+                },
+                {
+                    "slug": "large",
+                    "size": 24,
+                    "name": "Large"
+                }
+            ],
+            "customFontSize": false,
+            "fontStyle": false,
+            "fontWeight": false,
+            "letterSpacing": false,
+            "textDecoration": false,
+            "textTransform": false,
+            "dropCap": false
+        },
+        "border": {
+            "style": false,
+			"width": false,
+            "radius": false,
+            "customRadius": false
+        }
+    },
+    "styles": {
+        "elements": {
+            "link": {
+                "color": {
+                    "text": "var(--wp--preset--color--medium-blue)"
+                }
+            }
+        },
+        "blocks": {
+            "core/paragraph": {
+                "typography": {
+                    "fontFamilies": "var(--wp--preset--fontFamilies--signika-sansserif)",
+                    "fontSizes": [ 
+                        "var(--wp--preset--color--small)", 
+                        "var(--wp--preset--color--normal)"
+                    ]
+                },
+                "color": {
+                    "background": false,
+                        "palette": [ 
+                            "var(--wp--preset--color--black)", 
+                            "var(--wp--preset--color--royal-blue-dark)"
+                        ]
+                }
+			}
+		}
+    },
+    "customTemplates": {},
+    "templateParts": {}
+}
