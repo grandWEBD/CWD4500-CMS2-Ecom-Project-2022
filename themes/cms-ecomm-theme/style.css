@@ -43,3 +43,12 @@ Underscores is distributed under the terms of the GNU GPL v2 or later.
     src: url(./assets/fonts/Salsa/Salsa-Regular.ttf); 
     font-weight: normal;
     }
+
+header{
+    background-color: #E9F4FC;
+}
+
+footer{
+    background-color: #3A5D1C;
+}
+

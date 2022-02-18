@@ -167,7 +167,13 @@
                     "slug": "large",
                     "size": "1.5rem",
                     "name": "Large"
+                },
+                {
+                    "slug": "extra-large",
+                    "size": "2rem",
+                    "name": "extra-large"
                 }
+
             ],
             "customFontSize": false,
             "fontStyle": false,
