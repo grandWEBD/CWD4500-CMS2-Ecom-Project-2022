@@ -78,15 +78,15 @@ function cms_ecomm_theme_setup() {
 	 *
 	 * @link https://codex.wordpress.org/Theme_Logo
 	 */
-	/* add_theme_support(
+	add_theme_support(
 		'custom-logo',
 		array(
-			'height'      => 250,
-			'width'       => 250,
+			'height'      => 512,
+			'width'       => 512,
 			'flex-width'  => true,
 			'flex-height' => true,
 		)
-	); */
+	);
 
 	remove_theme_support('core-block-patterns');
 

@@ -53,12 +53,19 @@ header{
     align-items: center;
 }
 
-.site-header > a > img{
+.custom-logo-link{
+    grid-column: 1/2;
+}
+
+.custom-logo{
     max-height: 4rem;
+    max-width: 4rem;
 }
 
 .site-branding{
     grid-column: 2/3;
+    display: flex;
+    flex-direction: row;
 }
 
 .main-navigation{

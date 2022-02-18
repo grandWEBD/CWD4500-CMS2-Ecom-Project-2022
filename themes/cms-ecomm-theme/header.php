@@ -24,7 +24,16 @@
 <?php wp_body_open(); ?>
 <div id="page" class="site">
 	<header id="masthead" class="site-header">
-		<a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/logo.png"  alt="<?php bloginfo('title'); ?>" /></a>
+		<?php 
+			if ( function_exists( 'the_custom_logo' ) ) {
+				the_custom_logo();
+			}
+			else {
+				$cms_ecomm_theme_description = get_bloginfo( 'description', 'display' );
+				?>
+				<p class="site-description"><?php echo $cms_ecomm_theme_description; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped ?></p>
+			<?php } ?>
+				
 		<div class="site-branding">
 			<?php
 			if ( is_front_page() && is_home() ) :
@@ -35,12 +44,7 @@
 				?>
 				<p class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></p>
 				<?php
-			endif;
-			$cms_ecomm_theme_description = get_bloginfo( 'description', 'display' );
-			if ( $cms_ecomm_theme_description || is_customize_preview() ) :
-				?>
-				<p class="site-description"><?php echo $cms_ecomm_theme_description; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped ?></p>
-			<?php endif; ?>
+			endif;?>
 		</div><!-- .site-branding -->
 
 		<nav id="site-navigation" class="main-navigation">
@@ -55,3 +59,4 @@
 			?>
 		</nav><!-- #site-navigation -->
 	</header><!-- #masthead -->
+</div>
