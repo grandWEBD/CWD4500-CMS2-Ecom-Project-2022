@@ -46,9 +46,68 @@ Underscores is distributed under the terms of the GNU GPL v2 or later.
 
 header{
     background-color: #E9F4FC;
+    display: grid;
+    grid-template-columns: 15% 35% 50%;
+    grid-template-rows: 1fr;
+    justify-content: center;
+    align-items: center;
+}
+
+.custom-logo-link{
+    grid-column: 1/2;
+}
+
+.custom-logo{
+    max-height: 4rem;
+    max-width: 4rem;
+}
+
+.site-branding{
+    grid-column: 2/3;
+    display: flex;
+    flex-direction: row;
+}
+
+.main-navigation{
+    grid-column: 3/4;
+}
+
+.main-navigation > .menu-toggle{
+    display: none;
+}
+
+#header-menu{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+#header-menu > li{
+    float: right;
+    font-family: 'Salsa',cursive;
+    font-size: 21px;
+}
+
+#header-menu > li > a {
+    display: block;
+    color: #032B63;
+    text-align: center;
+    padding: 10px 12px;
+    text-decoration: none;
+}
+
+#header-menu > li > a:hover {
+    background-color: #FB8B24;
 }
 
 footer{
     background-color: #3A5D1C;
 }
 
+@media only screen and (max-width: 680px) {
+
+    .main-navigation > .menu-toggle{
+        display: block;
+    }
+}
