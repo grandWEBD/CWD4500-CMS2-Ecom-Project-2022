@@ -1,12 +1,26 @@
 {
-    "$schema": "https://schemas.wp.org/trunk/theme.json",
+    "$schema": "themeSchema.json",
     "version": 2,
     "settings": {
         "color": {
             "custom": false,
-            "gradients": false,
+            "gradients": [
+                {
+                    "gradient": "",
+                    "name": "",
+                    "slug": ""
+                    
+                }
+            ],
             "customGradient": false,
-            "duotone": false,
+            "duotone": [
+                {
+                    "colors": ["",""],
+                    "name": "",
+                    "slug": ""
+                    
+                }
+            ],
             "link": false,
             "defaultPalette": false,
             "palette": [
@@ -129,6 +143,83 @@
         "layout":{
             "contentSize": "1080px",
             "wideSize": "1200px"
+        },
+        "typography": {
+            "fontFamilies": [
+                {
+                    "fontFamily": "Helvetica Neue, Helvetica, Arial, sans-serif",
+                    "slug": "helvetica-arial",
+                    "name": "Helvetica or Arial"
+                },
+                {
+                    "fontFamily": "\"Signika\",sans-serif",
+                    "slug": "signika-sansserif",
+                    "name": "Signika"
+                },
+                {
+                    "fontFamily": "\"Salsa\",cursive",
+                    "slug": "salsa-cursive",
+                    "name": "Salsa"
+                }
+
+            ],
+            "fontSizes": [
+                {
+                    "slug": "small",
+                    "size": "12",
+                    "name": "Small"
+                },
+                {
+                    "slug": "normal",
+                    "size": "16",
+                    "name": "Normal"
+                },
+                {
+                    "slug": "large",
+                    "size": "24",
+                    "name": "Large"
+                }
+            ],
+            "customFontSize": false,
+            "fontStyle": false,
+            "fontWeight": false,
+            "letterSpacing": false,
+            "textDecoration": false,
+            "textTransform": false,
+            "dropCap": false
+        },
+        "border": {
+            "style": false,
+			"width": false,
+            "radius": false
         }
-    }
+    },
+    "styles": {
+        "color": {
+            "background": "var(--wp--preset--color--logo-blue-very-light)",
+            "text": "var(--wp--preset--color--royal-blue-dark)"
+        },
+        "elements": {
+            "link": {
+                "color": {
+                    "text": "var(--wp--preset--color--medium-blue)"
+                }
+            }
+        },
+        "blocks": {
+            "core/paragraph": {
+                "typography": {
+                    "fontFamily": "var(--wp--preset--fontFamilies--signika-sansserif)",
+                    "fontSize": "var(--wp--preset--color--normal)"
+                },
+                "color": {
+                    "background": "none",
+                    "text": 
+                        "var(--wp--preset--color--royal-blue-dark)"
+                }
+			}
+		}
+    },
+    "customTemplates": [],
+    "templateParts": []
 }

@@ -190,5 +190,3 @@ require get_template_directory() . '/inc/customizer.php';
  * Block Editor additions.
  */
 require get_template_directory() . '/inc/block-editor.php';
-
-
