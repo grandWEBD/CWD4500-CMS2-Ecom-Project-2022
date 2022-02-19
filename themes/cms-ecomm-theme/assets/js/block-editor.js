@@ -9,5 +9,7 @@ wp.domReady( function () {
     wp.blocks.unregisterBlockStyle('core/social-link', 'pillshape');
 
     wp.blocks.unregisterBlockStyle('core/separator', 'dots');
+
+    wp.blocks.unregisterBlockType( 'core/navigation' );
 } );
 
