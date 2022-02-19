@@ -62,6 +62,11 @@ Underscores is distributed under the terms of the GNU GPL v2 or later.
     max-width: 4rem;
 }
 
+.site-logo{
+    justify-self: center;
+    align-self: center;
+}
+
 .site-branding{
     grid-column: 2/3;
     display: flex;
@@ -124,6 +129,40 @@ Underscores is distributed under the terms of the GNU GPL v2 or later.
 .wp-block-calendar table th{
     background-color: #FEF2E6;
     color: #032B63;
+}
+
+.wp-block-column{
+    display: flex;
+}
+
+.wp-block-site-logo{
+    align-self: center;
+}
+
+#ws-form-1{
+    background-image: url(./assets/images/heroImage.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+
+.wsf-sections{
+    opacity: 1;
+    padding: 1rem;
+    color: #FEF2E6;
+}
+
+#post-17{
+    min-height: 640px;
+    background-image: url(./assets/images/aboutBackground.png);
+    background-repeat: no-repeat;
+    background-position: right bottom;
+    background-size: cover;
+}
+
+#post-17 .custom-logo{
+    max-height: 120px;
+    max-width: 120px;
 }
 
 .site-footer{

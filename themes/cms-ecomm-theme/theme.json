@@ -260,6 +260,11 @@
                     "fontWeight": "bold"
                 }
 			},
+            "core/cover": {
+                "color": {
+                    "text": "var(--wp--preset--color--white)"
+                }
+			},
             "core/quote": {
                 "border": {
                     "color": "var(--wp--preset--color--logo-orange)"
