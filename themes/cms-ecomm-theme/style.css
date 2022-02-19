@@ -121,6 +121,11 @@ Underscores is distributed under the terms of the GNU GPL v2 or later.
     display: none;
 }
 
+.wp-block-calendar table th{
+    background-color: #FEF2E6;
+    color: #032B63;
+}
+
 .site-footer{
     padding: 1rem;
     background-color: #3A5D1C;
