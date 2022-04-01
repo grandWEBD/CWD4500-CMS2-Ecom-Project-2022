@@ -23,7 +23,7 @@
 
 		wp_link_pages(
 			array(
-				'before' => '<div class="page-links">' . esc_html__( 'Pages:', 'cms-ecomm-theme' ),
+				'before' => '<div class="page-links">' . esc_html__( 'Pages:', 'cms-ecomm' ),
 				'after'  => '</div>',
 			)
 		);
@@ -37,7 +37,7 @@
 				sprintf(
 					wp_kses(
 						/* translators: %s: Name of current post. Only visible to screen readers */
-						__( 'Edit <span class="screen-reader-text">%s</span>', 'cms-ecomm-theme' ),
+						__( 'Edit <span class="screen-reader-text">%s</span>', 'cms-ecomm' ),
 						array(
 							'span' => array(
 								'class' => array(),

@@ -27,7 +27,7 @@ if ( ! function_exists( 'cms_ecomm_posted_on' ) ) :
 
 		$posted_on = sprintf(
 			/* translators: %s: post date. */
-			esc_html_x( 'Posted on %s', 'post date', 'cms-ecomm-theme' ),
+			esc_html_x( 'Posted on %s', 'post date', 'cms-ecomm' ),
 			'<a href="' . esc_url( get_permalink() ) . '" rel="bookmark">' . $time_string . '</a>'
 		);
 
@@ -43,7 +43,7 @@ if ( ! function_exists( 'cms_ecomm_posted_by' ) ) :
 	function cms_ecomm_posted_by() {
 		$byline = sprintf(
 			/* translators: %s: post author. */
-			esc_html_x( 'by %s', 'post author', 'cms-ecomm-theme' ),
+			esc_html_x( 'by %s', 'post author', 'cms-ecomm' ),
 			'<span class="author vcard"><a class="url fn n" href="' . esc_url( get_author_posts_url( get_the_author_meta( 'ID' ) ) ) . '">' . esc_html( get_the_author() ) . '</a></span>'
 		);
 
@@ -60,17 +60,17 @@ if ( ! function_exists( 'cms_ecomm_entry_footer' ) ) :
 		// Hide category and tag text for pages.
 		if ( 'post' === get_post_type() ) {
 			/* translators: used between list items, there is a space after the comma */
-			$categories_list = get_the_category_list( esc_html__( ', ', 'cms-ecomm-theme' ) );
+			$categories_list = get_the_category_list( esc_html__( ', ', 'cms-ecomm' ) );
 			if ( $categories_list ) {
 				/* translators: 1: list of categories. */
-				printf( '<span class="cat-links">' . esc_html__( 'Posted in %1$s', 'cms-ecomm-theme' ) . '</span>', $categories_list ); // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped
+				printf( '<span class="cat-links">' . esc_html__( 'Posted in %1$s', 'cms-ecomm' ) . '</span>', $categories_list ); // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped
 			}
 
 			/* translators: used between list items, there is a space after the comma */
-			$tags_list = get_the_tag_list( '', esc_html_x( ', ', 'list item separator', 'cms-ecomm-theme' ) );
+			$tags_list = get_the_tag_list( '', esc_html_x( ', ', 'list item separator', 'cms-ecomm' ) );
 			if ( $tags_list ) {
 				/* translators: 1: list of tags. */
-				printf( '<span class="tags-links">' . esc_html__( 'Tagged %1$s', 'cms-ecomm-theme' ) . '</span>', $tags_list ); // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped
+				printf( '<span class="tags-links">' . esc_html__( 'Tagged %1$s', 'cms-ecomm' ) . '</span>', $tags_list ); // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped
 			}
 		}
 
@@ -80,7 +80,7 @@ if ( ! function_exists( 'cms_ecomm_entry_footer' ) ) :
 				sprintf(
 					wp_kses(
 						/* translators: %s: post title */
-						__( 'Leave a Comment<span class="screen-reader-text"> on %s</span>', 'cms-ecomm-theme' ),
+						__( 'Leave a Comment<span class="screen-reader-text"> on %s</span>', 'cms-ecomm' ),
 						array(
 							'span' => array(
 								'class' => array(),
@@ -97,7 +97,7 @@ if ( ! function_exists( 'cms_ecomm_entry_footer' ) ) :
 			sprintf(
 				wp_kses(
 					/* translators: %s: Name of current post. Only visible to screen readers */
-					__( 'Edit <span class="screen-reader-text">%s</span>', 'cms-ecomm-theme' ),
+					__( 'Edit <span class="screen-reader-text">%s</span>', 'cms-ecomm' ),
 					array(
 						'span' => array(
 							'class' => array(),

@@ -7,9 +7,9 @@
  * @package CMS2_eCOMM_Theme
  */
 
-if ( ! defined( 'cms-ecomm-theme_VERSION' ) ) {
+if ( ! defined( 'cms-ecomm_VERSION' ) ) {
 	// Replace the version number of the theme on each release.
-	define( 'cms-ecomm-theme_VERSION', '1.0.0' );
+	define( 'cms-ecomm_VERSION', '1.0.0' );
 }
 
 /**
@@ -24,9 +24,9 @@ function cms_ecomm_setup() {
 		* Make theme available for translation.
 		* Translations can be filed in the /languages/ directory.
 		* If you're building a theme based on CMS2 eCOMM Theme, use a find and replace
-		* to change 'cms-ecomm-theme' to the name of your theme in all the template files.
+		* to change 'cms-ecomm' to the name of your theme in all the template files.
 		*/
-	load_theme_textdomain( 'cms-ecomm-theme', get_template_directory() . '/languages' );
+	load_theme_textdomain( 'cms-ecomm', get_template_directory() . '/languages' );
 
 	// Add default posts and comments RSS feed links to head.
 	add_theme_support( 'automatic-feed-links' );
@@ -49,7 +49,7 @@ function cms_ecomm_setup() {
 	// This theme uses wp_nav_menu() in one location.
 	register_nav_menus(
 		array(
-			'menu-header' => esc_html__( 'Header Menu', 'cms-ecomm-theme' ),
+			'menu-header' => esc_html__( 'Header Menu', 'cms-ecomm' ),
 		)
 	);
 
@@ -117,9 +117,9 @@ add_action( 'after_setup_theme', 'cms_ecomm_content_width', 0 );
 function cms_ecomm_widgets_init() {
 	register_sidebar(
 		array(
-			'name'          => esc_html__( 'Sidebar', 'cms-ecomm-theme' ),
+			'name'          => esc_html__( 'Sidebar', 'cms-ecomm' ),
 			'id'            => 'sidebar-main',
-			'description'   => esc_html__( 'Add widgets here.', 'cms-ecomm-theme' ),
+			'description'   => esc_html__( 'Add widgets here.', 'cms-ecomm' ),
 			'before_widget' => '<section id="%1$s" class="widget %2$s">',
 			'after_widget'  => '</section>',
 			'before_title'  => '<h2 class="widget-title">',
@@ -135,10 +135,10 @@ add_action( 'widgets_init', 'cms_ecomm_widgets_init' );
 function cms_ecomm_scripts() {
 	
 	wp_enqueue_style( 
-		'cms-ecomm-theme-style', 
+		'cms-ecomm-style', 
 		get_stylesheet_uri(), 
 		array(), 
-		'cms-ecomm-theme_VERSION'
+		'cms-ecomm_VERSION'
 	);
 
 	wp_enqueue_script( 
@@ -213,8 +213,8 @@ add_action('init', 'cms_ecomm_events');
  */
 function cms_ecomm_add_custom_post_types($query) {
     if ( is_home() && $query->is_main_query() ) {
-        $query->set( 'post_type', array( 'post', 'page', 'movie' ) );
+        $query->set( 'post_type', array( 'post', 'page', 'event' ) );
     }
     return $query;
 }
-add_action('pre_get_posts', 'wporg_add_custom_post_types');
+add_action('pre_get_posts', 'cms_ecomm_add_custom_post_types');
