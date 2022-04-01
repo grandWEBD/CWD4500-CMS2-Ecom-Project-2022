@@ -178,6 +178,21 @@ Underscores is distributed under the terms of the GNU GPL v2 or later.
     color: #A2D1F1;
 }
 
+.secondary-navigation ul{
+    display: inline;
+    float: left;
+}
+
+.secondary-navigation li{
+    list-style-type: none;
+    display: inline;
+}
+
+.secondary-navigation li a{
+    text-decoration: none;
+    padding: 0 .5rem 0 .5rem;
+}
+
 @media only screen and (max-width: 680px) {
 
     .main-navigation > .menu-toggle{

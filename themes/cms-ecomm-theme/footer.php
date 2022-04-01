@@ -12,6 +12,16 @@
 ?>
 
 	<footer id="colophon" class="site-footer">
+		<nav id="site-navigation" class="secondary-navigation">
+			<?php
+			wp_nav_menu(
+				array(
+					'theme_location' => 'menu-footer',
+					'menu_id'        => 'footer-menu',
+				)
+			);
+			?>
+		</nav><!-- #site-navigation -->
 		<div class="site-info">
 			<span class="sep"> | </span>
 				<?php

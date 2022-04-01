@@ -46,10 +46,11 @@ function cms_ecomm_setup() {
 		*/
 	add_theme_support( 'post-thumbnails' );
 
-	// This theme uses wp_nav_menu() in one location.
+	// This theme uses wp_nav_menu() in two locations.
 	register_nav_menus(
 		array(
 			'menu-header' => esc_html__( 'Header Menu', 'cms-ecomm' ),
+			'menu-footer' => esc_html__( 'Footer Menu', 'cms-ecomm' ),
 		)
 	);
 
@@ -199,10 +200,21 @@ function cms_ecomm_custom_post_type() {
             'labels'      => array(
                 'name'          => __('Events', 'textdomain'),
                 'singular_name' => __('Event', 'textdomain'),
+				'add_new' => 'Add New Event',
+				'add_new_item' => 'Add New Event',
+				'edit_item' => 'Edit Event',
+				'new_item' => 'New Event',
+				'all_items' => 'All Events',
+				'view_item' => 'View Event',
+				'search_items' => 'Search Events',
+				'not_found' =>  'No Products Found',
+				'not_found_in_trash' => 'No Products found in Trash', 
+				'parent_item_colon' => '',
+				'menu_name' => 'Events',
             ),
                 'public'              => true,
                 'has_archive'         => true,
-				'rewrite'             => array( 'slug' => 'event' ),
+				'rewrite'             => array( 'slug' => 'cms_events' ),
 				'hierarchical'        => false,
 				'show_ui'             => true,
 				'show_in_menu'        => true,
@@ -213,6 +225,7 @@ function cms_ecomm_custom_post_type() {
 				'exclude_from_search' => false,
 				'publicly_queryable'  => true,
 				'capability_type'     => 'post',
+				'taxonomies'          => array( 'category' ),
 				'show_in_rest' 		  => true,
                 'supports'            => array('title' , 'editor', 'thumbnail', 'excerpt', 'comments')
         )
