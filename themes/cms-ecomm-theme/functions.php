@@ -177,6 +177,11 @@ require get_template_directory() . '/inc/customizer.php';
  */
 require get_template_directory() . '/inc/block-editor.php';
 
+/**
+ * Custom Post Type additions.
+ */
+require get_template_directory() . '/inc/post-types.php';
+
 
 /**
  * Add class to hide entry header and entry footer titles on pages
@@ -191,44 +196,3 @@ function cms_ecomm_hidetitle_class($classes) {
 add_filter('post_class', 'cms_ecomm_hidetitle_class');
 
 
-/**
- * Add a custom post type for events
- */
-function cms_ecomm_custom_post_type() {
-    register_post_type('cms_ecomm_events',
-        array(
-            'labels'      => array(
-                'name'          => __('Events', 'textdomain'),
-                'singular_name' => __('Event', 'textdomain'),
-				'add_new' => 'Add New Event',
-				'add_new_item' => 'Add New Event',
-				'edit_item' => 'Edit Event',
-				'new_item' => 'New Event',
-				'all_items' => 'All Events',
-				'view_item' => 'View Event',
-				'search_items' => 'Search Events',
-				'not_found' =>  'No Products Found',
-				'not_found_in_trash' => 'No Products found in Trash', 
-				'parent_item_colon' => '',
-				'menu_name' => 'Events',
-            ),
-                'public'              => true,
-                'has_archive'         => true,
-				'rewrite'             => array( 'slug' => 'cms_events' ),
-				'hierarchical'        => false,
-				'show_ui'             => true,
-				'show_in_menu'        => true,
-				'show_in_nav_menus'   => true,
-				'menu_position' 	  => 5,
-				'show_in_admin_bar'   => true,
-				'can_export'          => true,
-				'exclude_from_search' => false,
-				'publicly_queryable'  => true,
-				'capability_type'     => 'post',
-				'taxonomies'          => array( 'category' ),
-				'show_in_rest' 		  => true,
-                'supports'            => array('title' , 'editor', 'thumbnail', 'excerpt', 'comments')
-        )
-    );
-}
-add_action('init', 'cms_ecomm_custom_post_type');
