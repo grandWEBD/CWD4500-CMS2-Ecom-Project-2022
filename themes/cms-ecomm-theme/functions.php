@@ -195,4 +195,40 @@ function cms_ecomm_hidetitle_class($classes) {
 }
 add_filter('post_class', 'cms_ecomm_hidetitle_class');
 
+/**
+ * Add function to display 3 posts with a specific category assigned
+ */
+function cms_ecomm_posts_by_category() {
+	// the query
+	$getNewsPosts_query = new WP_Query( array( 
+		'category_name' => 'News', 
+		'posts_per_page' => 3
+	) ); 
 
+	$string = '';
+
+	if ( $getNewsPosts_query->have_posts() ) {
+		$string .= '<ul class="postsbycategory widget_recent_entries">';
+		while ( $getNewsPosts_query->have_posts() ) {
+			$getNewsPosts_query->the_post();
+				if ( has_post_thumbnail() ) {
+				$string .= '<li>';
+				$string .= '<a href="' . get_the_permalink() .'" rel="bookmark">' . get_the_post_thumbnail($post_id, array( 50, 50) ) . get_the_title() .'</a></li>';
+				} else { 
+				// if no featured image is found
+				$string .= '<li><a href="' . get_the_permalink() .'" rel="bookmark">' . get_the_title() .'</a></li>';
+				}
+			}
+		} else {
+		// no posts found
+	$string .= '<li>No Posts Found</li>';
+	}
+	$string .= '</ul>';
+
+	return $string;
+
+	/* Restore original Post Data */
+	wp_reset_postdata();
+}
+	// Add a shortcode
+	add_shortcode('news_posts', 'cms_ecomm_posts_by_category');

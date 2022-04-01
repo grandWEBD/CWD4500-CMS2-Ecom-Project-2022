@@ -44,6 +44,11 @@ Underscores is distributed under the terms of the GNU GPL v2 or later.
     font-weight: normal;
     }
 
+/* get content inside columns on home page to style vertically */
+.wp-block-column.displayBlock{
+    display: block;
+}
+
 .site-header{
     background-color: #E9F4FC;
     display: grid;
@@ -163,6 +168,10 @@ Underscores is distributed under the terms of the GNU GPL v2 or later.
 #post-17 .custom-logo{
     max-height: 120px;
     max-width: 120px;
+}
+
+ul.postsbycategory{
+    list-style-type: none;
 }
 
 .site-footer{
