@@ -19,7 +19,7 @@ if ( ! defined( 'cms-ecomm-theme_VERSION' ) ) {
  * runs before the init hook. The init hook is too late for some features, such
  * as indicating support for post thumbnails.
  */
-function cms_ecomm_theme_setup() {
+function cms_ecomm_setup() {
 	/*
 		* Make theme available for translation.
 		* Translations can be filed in the /languages/ directory.
@@ -95,7 +95,7 @@ function cms_ecomm_theme_setup() {
 
 	add_theme_support( 'wp-block-styles' );
 }
-add_action( 'after_setup_theme', 'cms_ecomm_theme_setup' );
+add_action( 'after_setup_theme', 'cms_ecomm_setup' );
 
 /**
  * Set the content width in pixels, based on the theme's design and stylesheet.
@@ -104,17 +104,17 @@ add_action( 'after_setup_theme', 'cms_ecomm_theme_setup' );
  *
  * @global int $content_width
  */
-function cms_ecomm_theme_content_width() {
-	$GLOBALS['content_width'] = apply_filters( 'cms_ecomm_theme_content_width', 960 );
+function cms_ecomm_content_width() {
+	$GLOBALS['content_width'] = apply_filters( 'cms_ecomm_content_width', 960 );
 }
-add_action( 'after_setup_theme', 'cms_ecomm_theme_content_width', 0 );
+add_action( 'after_setup_theme', 'cms_ecomm_content_width', 0 );
 
 /**
  * Register widget area.
  *
  * @link https://developer.wordpress.org/themes/functionality/sidebars/#registering-a-sidebar
  */
-function cms_ecomm_theme_widgets_init() {
+function cms_ecomm_widgets_init() {
 	register_sidebar(
 		array(
 			'name'          => esc_html__( 'Sidebar', 'cms-ecomm-theme' ),
@@ -127,12 +127,12 @@ function cms_ecomm_theme_widgets_init() {
 		)
 	);
 }
-add_action( 'widgets_init', 'cms_ecomm_theme_widgets_init' );
+add_action( 'widgets_init', 'cms_ecomm_widgets_init' );
 
 /**
  * Enqueue scripts and styles.
  */
-function cms_ecomm_theme_scripts() {
+function cms_ecomm_scripts() {
 	
 	wp_enqueue_style( 
 		'cms-ecomm-theme-style', 
@@ -153,7 +153,7 @@ function cms_ecomm_theme_scripts() {
 		wp_enqueue_script( 'comment-reply' );
 	}
 }
-add_action( 'wp_enqueue_scripts', 'cms_ecomm_theme_scripts' );
+add_action( 'wp_enqueue_scripts', 'cms_ecomm_scripts' );
 
 /**
  * Custom template tags for this theme.
@@ -180,11 +180,41 @@ require get_template_directory() . '/inc/block-editor.php';
 /**
  * Add class to hide entry header and entry footer titles on pages
  */
-function cms_ecomm_theme_hidetitle_class($classes) {
+function cms_ecomm_hidetitle_class($classes) {
 	if ( is_page() ) : 
 		$classes[] = 'hidetitle';
 		return $classes;
 	endif; 
 	return $classes;
 }
-add_filter('post_class', 'cms_ecomm_theme_hidetitle_class');
+add_filter('post_class', 'cms_ecomm_hidetitle_class');
+
+
+/**
+ * Add a custom post type for events
+ */
+function cms_ecomm_events() {
+    register_post_type('cms_ecomm_events',
+        array(
+            'labels'      => array(
+                'name'          => __('Events', 'textdomain'),
+                'singular_name' => __('Event', 'textdomain'),
+            ),
+                'public'      => true,
+                'has_archive' => true,
+				'rewrite'     => array( 'slug' => 'events' ),
+        )
+    );
+}
+add_action('init', 'cms_ecomm_events');
+
+/**
+ * Set post types for home page
+ */
+function cms_ecomm_add_custom_post_types($query) {
+    if ( is_home() && $query->is_main_query() ) {
+        $query->set( 'post_type', array( 'post', 'page', 'movie' ) );
+    }
+    return $query;
+}
+add_action('pre_get_posts', 'wporg_add_custom_post_types');

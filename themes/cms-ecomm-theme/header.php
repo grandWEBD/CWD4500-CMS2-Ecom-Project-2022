@@ -29,9 +29,9 @@
 				the_custom_logo();
 			}
 			else {
-				$cms_ecomm_theme_description = get_bloginfo( 'description', 'display' );
+				$cms_ecomm_description = get_bloginfo( 'description', 'display' );
 				?>
-				<p class="site-description"><?php echo $cms_ecomm_theme_description; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped ?></p>
+				<p class="site-description"><?php echo $cms_ecomm_description; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped ?></p>
 			<?php } ?>
 				
 		<div class="site-branding">

@@ -16,20 +16,20 @@
 		<?php if ( 'post' === get_post_type() ) : ?>
 		<div class="entry-meta">
 			<?php
-			cms_ecomm_theme_posted_on();
-			cms_ecomm_theme_posted_by();
+			cms_ecomm_posted_on();
+			cms_ecomm_posted_by();
 			?>
 		</div><!-- .entry-meta -->
 		<?php endif; ?>
 	</header><!-- .entry-header -->
 
-	<?php cms_ecomm_theme_post_thumbnail(); ?>
+	<?php cms_ecomm_post_thumbnail(); ?>
 
 	<div class="entry-summary">
 		<?php the_excerpt(); ?>
 	</div><!-- .entry-summary -->
 
 	<footer class="entry-footer">
-		<?php cms_ecomm_theme_entry_footer(); ?>
+		<?php cms_ecomm_entry_footer(); ?>
 	</footer><!-- .entry-footer -->
 </article><!-- #post-<?php the_ID(); ?> -->

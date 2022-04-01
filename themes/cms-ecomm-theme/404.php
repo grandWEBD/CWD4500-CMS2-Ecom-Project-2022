@@ -45,8 +45,8 @@ get_header();
 
 					<?php
 					/* translators: %1$s: smiley */
-					$cms_ecomm_theme_archive_content = '<p>' . sprintf( esc_html__( 'Try looking in the monthly archives. %1$s', 'cms-ecomm-theme' ), convert_smilies( ':)' ) ) . '</p>';
-					the_widget( 'WP_Widget_Archives', 'dropdown=1', "after_title=</h2>$cms_ecomm_theme_archive_content" );
+					$cms_ecomm_archive_content = '<p>' . sprintf( esc_html__( 'Try looking in the monthly archives. %1$s', 'cms-ecomm-theme' ), convert_smilies( ':)' ) ) . '</p>';
+					the_widget( 'WP_Widget_Archives', 'dropdown=1', "after_title=</h2>$cms_ecomm_archive_content" );
 
 					the_widget( 'WP_Widget_Tag_Cloud' );
 					?>
