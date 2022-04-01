@@ -212,6 +212,7 @@ function cms_ecomm_custom_post_type() {
 				'can_export'          => true,
 				'exclude_from_search' => false,
 				'publicly_queryable'  => true,
+				'capability_type'     => 'post',
 				'show_in_rest' 		  => true,
                 'supports'            => array('title' , 'editor', 'thumbnail', 'excerpt', 'comments')
         )
