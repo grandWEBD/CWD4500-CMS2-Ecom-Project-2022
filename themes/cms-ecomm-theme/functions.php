@@ -193,28 +193,28 @@ add_filter('post_class', 'cms_ecomm_hidetitle_class');
 /**
  * Add a custom post type for events
  */
-function cms_ecomm_events() {
+function cms_ecomm_custom_post_type() {
     register_post_type('cms_ecomm_events',
         array(
             'labels'      => array(
                 'name'          => __('Events', 'textdomain'),
                 'singular_name' => __('Event', 'textdomain'),
             ),
-                'public'      => true,
-                'has_archive' => true,
-				'rewrite'     => array( 'slug' => 'events' ),
+                'public'              => true,
+                'has_archive'         => true,
+				'rewrite'             => array( 'slug' => 'event' ),
+				'hierarchical'        => false,
+				'show_ui'             => true,
+				'show_in_menu'        => true,
+				'show_in_nav_menus'   => true,
+				'menu_position' 	  => 5,
+				'show_in_admin_bar'   => true,
+				'can_export'          => true,
+				'exclude_from_search' => false,
+				'publicly_queryable'  => true,
+				'show_in_rest' 		  => true,
+                'supports'            => array('title' , 'editor', 'thumbnail', 'excerpt', 'comments')
         )
     );
 }
-add_action('init', 'cms_ecomm_events');
-
-/**
- * Set post types for home page
- */
-function cms_ecomm_add_custom_post_types($query) {
-    if ( is_home() && $query->is_main_query() ) {
-        $query->set( 'post_type', array( 'post', 'page', 'event' ) );
-    }
-    return $query;
-}
-add_action('pre_get_posts', 'cms_ecomm_add_custom_post_types');
+add_action('init', 'cms_ecomm_custom_post_type');

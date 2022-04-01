@@ -26,7 +26,7 @@
 				cms_ecomm_posted_by();
 				?>
 			</div><!-- .entry-meta -->
-		<?php endif; ?>
+		<?php endif;?>
 	</header><!-- .entry-header -->
 
 	<?php cms_ecomm_post_thumbnail(); ?>
