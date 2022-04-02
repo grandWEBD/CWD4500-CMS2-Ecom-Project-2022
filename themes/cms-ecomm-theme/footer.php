@@ -12,6 +12,34 @@
 ?>
 
 	<footer id="colophon" class="site-footer">
+		<?php
+		$events_args = array(
+			'post_type'		=> array( 'cms_ecomm_event' ),
+			'post_status'	=> 'publish',
+			'posts_per_page'=> 3,
+			'order_by'		=> 'rand',
+			'post_not_in'	=> array( get_the_ID() )
+		);
+
+		$events_query = new WP_Query( $events_args );
+
+		if( $events_query -> have_post( ) ){
+			?>
+			<div class="footerEvents">
+				<?php
+				while ( $events_args->have_post() ){
+					$events_args->the_post();
+					the_post_thumbnail();
+					the_title( '<h4>', '</h4>');
+					the_excerpt();
+				}
+				?>
+			</div>
+			<?php
+			wp_reset_postdata();		
+		}
+		?>
+
 		<nav id="site-navigation" class="secondary-navigation">
 			<?php
 			wp_nav_menu(

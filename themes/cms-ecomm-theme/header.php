@@ -50,12 +50,14 @@
 		<nav id="site-navigation" class="main-navigation">
 			<button class="menu-toggle" aria-controls="header-menu" aria-expanded="false"><?php esc_html_e( 'Header Menu', 'cms-ecomm' ); ?></button>
 			<?php
-			wp_nav_menu(
-				array(
-					'theme_location' => 'menu-header',
-					'menu_id'        => 'header-menu',
-				)
-			);
+			if( has_nav_menu( 'menu-header' )){
+				wp_nav_menu(
+					array(
+						'theme_location' => 'menu-header',
+						'menu_id'        => 'header-menu',
+					)
+				);
+			}
 			?>
 		</nav><!-- #site-navigation -->
 	</header><!-- #masthead -->
