@@ -13,9 +13,10 @@
 
 	<footer id="colophon" class="site-footer">
 		<?php
+		// display 3 event posts
 		$events_args = array(
 			'post_type'		=> array( 'cms_ecomm_event' ),
-			'post_status'	=> 'publish',
+			'post_status'	=> 'published',
 			'posts_per_page'=> 3,
 			'order_by'		=> 'rand',
 			'post_not_in'	=> array( get_the_ID() )
@@ -23,15 +24,14 @@
 
 		$events_query = new WP_Query( $events_args );
 
-		if( $events_query -> have_post( ) ){
+		if( $events_query -> have_posts() ){
 			?>
 			<div class="footerEvents">
 				<?php
-				while ( $events_args->have_post() ){
-					$events_args->the_post();
+				while ( $events_query->have_posts() ){
+					$events_query->the_post();
 					the_post_thumbnail();
-					the_title( '<h4>', '</h4>');
-					the_excerpt();
+					the_title( '<h4 class="entry-title"><a href="' . esc_url( get_permalink() ) . '" rel="bookmark">', '</a></h4>' );
 				}
 				?>
 			</div>
@@ -39,7 +39,6 @@
 			wp_reset_postdata();		
 		}
 		?>
-
 		<nav id="site-navigation" class="secondary-navigation">
 			<?php
 			wp_nav_menu(
@@ -49,7 +48,7 @@
 				)
 			);
 			?>
-		</nav><!-- #site-navigation -->
+		</nav><!-- #site-navigation secondary -->
 		<div class="site-info">
 			<span class="sep"> | </span>
 				<?php
